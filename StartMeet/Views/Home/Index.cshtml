@@ -1,24 +1,27 @@
-@model CreateModel
+@model MultipleAccountSettingsModel
 
-<header class="container-fluid p-2" style="background-color: darkblue;" >
+
+<header class="container-fluid p-2" style="background-color: darkblue;">
     <div class="row text-white">
         <div class="col col-7">
             <h1 class="mt-4 text-center font-weight-bold">StartMeet</h1>
         </div>
         <div class="col col-5">
             <div class="form-row row-cols-2">
-                <div class="col form-group">
-                    <label for="email">Email or Phone</label>
-                    <input type="email" class="form-control form-control-sm" id="email" />
-                </div>
-                <div class="col form-group">
-                    <label for="password">Password</label>
-                    <form class="form-inline">
-                        <input type="text" class="form-control form-control-sm" id="password"/>
-                        <a class="btn btn-info btn-sm ml-2">Log In</a>
-                    </form>
-                    <a>Forgot account?</a>
-                </div>
+                <div class="text-danger" asp-validation-summary="All"></div>
+                <form asp-action="Login" method="post">
+                    <input type="hidden" name="returnUrl" value="@ViewBag.returnUrl"/>
+                    <div class="col form-group">
+                        <label asp-for="@Model.SignInModel.Email" for="email">Email or Phone</label>
+                        <input asp-for="@Model.SignInModel.Email" type="email" class="form-control form-control-sm" id="email" />
+                    </div>
+                    <div class="col form-group">
+                        <label asp-for="@Model.SignInModel.Password" for="password">Password</label>
+                            <input asp-for="@Model.SignInModel.Password" type="password" class="form-control form-control-sm" id="password" />
+                            <button class="btn btn-info btn-sm ml-2" type="submit">Log In</button>
+                        <a>Forgot account?</a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -36,12 +39,12 @@
         <h1 class="font-weight-bold">Sign Up</h1>
         <h5>It's quick and easy.</h5>
         <div class="form-inline m-1 form-group">
-            <input asp-for="Name" type="text" class="form-control " placeholder="First name" />
+            <input asp-for="@Model.RegisterModel.Name" type="text" class="form-control " placeholder="First name" />
             <input type="text" class="form-control ml-1" placeholder="Second name" />
         </div>
         <div class="form-group mr-5 pr-5">
-            <input asp-for="Email" type="email" class="form-control m-1" placeholder="Email" />
-            <input asp-for="Password" type="password" class="form-control m-1" placeholder="New Password" />
+            <input asp-for="@Model.RegisterModel.Email" type="email" class="form-control m-1" placeholder="Email" />
+            <input asp-for="@Model.RegisterModel.Password" type="password" class="form-control m-1" placeholder="New Password" />
         </div>
         <h6 class="text-secondary font-weight-bold m-1 mt-2">Birthday</h6>
         <div>

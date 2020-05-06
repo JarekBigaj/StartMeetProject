@@ -26,6 +26,8 @@ namespace StartMeet
                 .AddEntityFrameworkStores<AppIdentityDbContext>()
                 .AddDefaultTokenProviders();
 
+            services.ConfigureApplicationCookie(options => options.LoginPath = "/Home/Index");
+
             services.AddMvc(options => options.EnableEndpointRouting = false);
         }
 
