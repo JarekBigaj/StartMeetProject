@@ -25,7 +25,6 @@ namespace StartMeet.Controllers
                 AppUser user = new AppUser
                 {
                     UserName = model.Name,
-                    UserSecondName = model.SecondName,
                     Email = model.Email,
                     PasswordHash = model.Password
                 };

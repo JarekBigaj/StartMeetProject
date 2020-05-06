@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\StartMeetProject\\StartMeet\\startmeet\\StartMeet.csproj": {}
+    "C:\\Users\\User\\Desktop\\StartMeetProject\\StartMeet\\StartMeet\\StartMeet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\StartMeetProject\\StartMeet\\startmeet\\StartMeet.csproj": {
+    "C:\\Users\\User\\Desktop\\StartMeetProject\\StartMeet\\StartMeet\\StartMeet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\StartMeetProject\\StartMeet\\startmeet\\StartMeet.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\StartMeetProject\\StartMeet\\StartMeet\\StartMeet.csproj",
         "projectName": "StartMeet",
-        "projectPath": "C:\\Users\\User\\Desktop\\StartMeetProject\\StartMeet\\startmeet\\StartMeet.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\StartMeetProject\\StartMeet\\StartMeet\\StartMeet.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\StartMeetProject\\StartMeet\\startmeet\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\StartMeetProject\\StartMeet\\StartMeet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
