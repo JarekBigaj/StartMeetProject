@@ -1,0 +1,76 @@
+@model CreateModel
+
+<header class="container-fluid p-2" style="background-color: darkblue;" >
+    <div class="row text-white">
+        <div class="col col-7">
+            <h1 class="mt-4 text-center font-weight-bold">StartMeet</h1>
+        </div>
+        <div class="col col-5">
+            <div class="form-row row-cols-2">
+                <div class="col form-group">
+                    <label for="email">Email or Phone</label>
+                    <input type="email" class="form-control form-control-sm" id="email" />
+                </div>
+                <div class="col form-group">
+                    <label for="password">Password</label>
+                    <form class="form-inline">
+                        <input type="text" class="form-control form-control-sm" id="password"/>
+                        <a class="btn btn-info btn-sm ml-2">Log In</a>
+                    </form>
+                    <a>Forgot account?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="row" style="background-color: lightblue;">
+    <div class="col-6 ml-5 pl-5">
+        <div class="p-5 ml-4">
+            <h2 class="p-2 font-italic font-weight-normal ">Connect with friends and the world around you on StartMeet.</h2>
+            <h6 class="p-2 font-weight-bold">See photos and updates <small>from the firends in News Feed.</small></h6>
+            <h6 class="p-2 font-weight-bold">Share what's new <small>in your life on your Timeline.</small></h6>
+            <h6 class="p-2 font-weight-bold">Find more <small>of what you're looking for with StartMeet Search</small></h6>
+        </div>
+    </div>
+    <form asp-action="Create" method="POST">
+        <h1 class="font-weight-bold">Sign Up</h1>
+        <h5>It's quick and easy.</h5>
+        <div class="form-inline m-1 form-group">
+            <input asp-for="Name" type="text" class="form-control " placeholder="First name" />
+            <input asp-for="SecondName" type="text" class="form-control ml-1" placeholder="Second name" />
+        </div>
+        <div class="form-group mr-5 pr-5">
+            <input asp-for="Email" type="email" class="form-control m-1" placeholder="Email" />
+            <input asp-for="Password" type="password" class="form-control m-1" placeholder="New Password" />
+        </div>
+        <h6 class="text-secondary font-weight-bold m-1 mt-2">Birthday</h6>
+        <div>
+            <select>
+                <option>1</option>
+                <option>2</option>
+            </select>
+            <select>
+                <option>styczeń</option>
+            </select>
+            <select>
+                <option>2020</option>
+            </select>
+        </div>
+        <div>
+            <h6 class="text-secondary font-weight-bold m1 mt-2">Gender</h6>
+            <div class="form-check-inline">
+                <label class="form-check-label font-weight-bold">
+                    <input type="radio" class="form-check-input" name="genderRadio" />Female
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label font-weight-bold">
+                    <input type="radio" class="form-check-input" name="genderRadio" />Male
+                </label>
+            </div>
+        </div>
+        <!-- Policy Privacy TO DO ... -->
+        <button type="submit" class="btn btn-success mb-5 mt-5">Sign Up</button>
+        <div asp-validation-summary="All" class="text-danger"></div>
+    </form>
+</div>
