@@ -72,3 +72,6 @@ C:\Users\User\Desktop\StartMeetProject\StartMeet\startmeet\obj\Debug\netcoreapp3
 C:\Users\User\Desktop\StartMeetProject\StartMeet\startmeet\obj\Debug\netcoreapp3.1\StartMeet.genruntimeconfig.cache
 C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\bin\Debug\netcoreapp3.1\libman.json
 C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\obj\Debug\netcoreapp3.1\Razor\Views\UserHome\Index.cshtml.g.cs
+C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\obj\Debug\netcoreapp3.1\Razor\Views\RoleAdmin\Index.cshtml.g.cs
+C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\obj\Debug\netcoreapp3.1\Razor\Views\RoleAdmin\Create.cshtml.g.cs
+C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\obj\Debug\netcoreapp3.1\Razor\Views\RoleAdmin\Edit.cshtml.g.cs

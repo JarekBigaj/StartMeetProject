@@ -22,9 +22,16 @@ namespace StartMeet
                     Configuration["Data:StartMeetIdentity:ConnectionString"]
                 ));
 
-            services.AddIdentity<AppUser, IdentityRole>()
-                .AddEntityFrameworkStores<AppIdentityDbContext>()
-                .AddDefaultTokenProviders();
+            services.AddIdentity<AppUser, IdentityRole>(options =>
+            {
+                options.User.RequireUniqueEmail = true;
+                options.Password.RequiredLength = 6;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireDigit = true;
+            }).AddEntityFrameworkStores<AppIdentityDbContext>()
+              .AddDefaultTokenProviders();
 
             services.ConfigureApplicationCookie(options => options.LoginPath = "/Home/Index");
 
@@ -42,7 +49,7 @@ namespace StartMeet
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}");
+                    template: "{controller=UserHome}/{action=Index}");
             });
         }
     }

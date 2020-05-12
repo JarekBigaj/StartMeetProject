@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Identity;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace StartMeet.Models.ViewModels
@@ -20,5 +23,21 @@ namespace StartMeet.Models.ViewModels
         [Required]
         [UIHint("password")]
         public string Password { get; set; }
+    }
+
+    public class RoleEditModel
+    {
+        public IdentityRole Role { get; set; }
+        public IEnumerable<AppUser> Members { get; set; }
+        public IEnumerable<AppUser> NonMembers { get; set; }
+    }
+
+    public class RoleModifactionModel
+    {
+        [Required]
+        public string RoleName { get; set; }
+        public string RoleId { get; set; }
+        public string[] IdsToAdd { get; set; }
+        public string[] IdsToDelete { get; set; }
     }
 }

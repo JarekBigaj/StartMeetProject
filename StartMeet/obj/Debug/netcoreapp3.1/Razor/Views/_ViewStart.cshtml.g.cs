@@ -21,13 +21,27 @@ using StartMeet.Models;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\Views\_ViewImports.cshtml"
+using StartMeet.Infrastructure;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\Views\_ViewImports.cshtml"
 using StartMeet.Models.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d7218ab05887d095a4564131640dee2238a916fd", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4cd257ab176736de71ca2cf47be16cea315e12be", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b6a1d16efbe7fb602ffa1ff794624a5182204924", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

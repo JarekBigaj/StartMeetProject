@@ -21,13 +21,27 @@ using StartMeet.Models;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\Views\_ViewImports.cshtml"
+using StartMeet.Infrastructure;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\Views\_ViewImports.cshtml"
 using StartMeet.Models.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f166f5b4a02eb46e1ed000f471bf43b21ebedb7a", @"/Views/Shared/_Layout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4cd257ab176736de71ca2cf47be16cea315e12be", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b6a1d16efbe7fb602ffa1ff794624a5182204924", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("rel", new global::Microsoft.AspNetCore.Html.HtmlString("stylesheet"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -60,9 +74,9 @@ using StartMeet.Models.ViewModels;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f166f5b4a02eb46e1ed000f471bf43b21ebedb7a4425", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f166f5b4a02eb46e1ed000f471bf43b21ebedb7a4826", async() => {
                 WriteLiteral("\r\n        <meta name=\"viewport\" content=\"width=device-width\"/>\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f166f5b4a02eb46e1ed000f471bf43b21ebedb7a4759", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f166f5b4a02eb46e1ed000f471bf43b21ebedb7a5160", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper>();
@@ -92,7 +106,7 @@ using StartMeet.Models.ViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f166f5b4a02eb46e1ed000f471bf43b21ebedb7a6979", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f166f5b4a02eb46e1ed000f471bf43b21ebedb7a7380", async() => {
                 WriteLiteral("\r\n        <div>\r\n            ");
 #nullable restore
 #line 13 "C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\Views\Shared\_Layout.cshtml"
