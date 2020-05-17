@@ -40,5 +40,6 @@ namespace StartMeet.Controllers.UserControllers
             await signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+
     }
 }

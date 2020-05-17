@@ -75,3 +75,4 @@ C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\obj\Debug\netcoreapp3
 C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\obj\Debug\netcoreapp3.1\Razor\Views\RoleAdmin\Index.cshtml.g.cs
 C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\obj\Debug\netcoreapp3.1\Razor\Views\RoleAdmin\Create.cshtml.g.cs
 C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\obj\Debug\netcoreapp3.1\Razor\Views\RoleAdmin\Edit.cshtml.g.cs
+C:\Users\User\Desktop\StartMeetProject\StartMeet\StartMeet\obj\Debug\netcoreapp3.1\Razor\Views\Account\AccessDenied.cshtml.g.cs

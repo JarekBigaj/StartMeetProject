@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using StartMeet.Models;
 using StartMeet.Models.ViewModels;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace StartMeet.Controllers
 {
+    [Authorize(Roles ="Administrators")]
     public class RoleAdminController : Controller
     {
         private RoleManager<IdentityRole> roleManager;
