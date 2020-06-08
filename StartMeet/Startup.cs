@@ -51,7 +51,7 @@ namespace StartMeet
                     name: "default",
                     template: "{controller=UserHome}/{action=Index}");
             });
-            AppIdentityDbContext.CreateAdminAccount(app.ApplicationServices, Configuration).Wait();
+           // AppIdentityDbContext.CreateAdminAccount(app.ApplicationServices, Configuration).Wait();
         }
     }
 }

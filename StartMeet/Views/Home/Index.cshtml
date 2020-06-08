@@ -48,28 +48,23 @@
         </div>
         <h6 class="text-secondary font-weight-bold m-1 mt-2">Birthday</h6>
         <div>
-            <select>
-                <option>1</option>
-                <option>2</option>
+            @Html.DropDownListFor(model => model.RegisterModel.Day,Enumerable.Range(1,31).Select(x=>new SelectListItem { Text = x.ToString() }))
+            <select asp-for="@Model.RegisterModel.Month" 
+                    asp-items="@new SelectList(Enum.GetNames(typeof(Months)))" >
+                <option disabled selected value=""/>
             </select>
-            <select>
-                <option>styczeń</option>
-            </select>
-            <select>
-                <option>2020</option>
-            </select>
+            @Html.DropDownListFor(model=>model.RegisterModel.Year,Enumerable.Range(DateTime.Now.Year-90,90).Select(x=> new SelectListItem { Text = x.ToString()}))
         </div>
         <div>
             <h6 class="text-secondary font-weight-bold m1 mt-2">Gender</h6>
             <div class="form-check-inline">
-                <label class="form-check-label font-weight-bold">
-                    <input type="radio" class="form-check-input" name="genderRadio" />Female
-                </label>
-            </div>
-            <div class="form-check-inline">
-                <label class="form-check-label font-weight-bold">
-                    <input type="radio" class="form-check-input" name="genderRadio" />Male
-                </label>
+                @foreach(var gender in Enum.GetNames(typeof(Genders)))
+                {
+                    if (gender != "Empty")
+                    {
+                        <input type="radio" asp-for="@Model.RegisterModel.Gender" value="@gender" />@gender<br/>
+                    }
+                }
             </div>
         </div>
         <!-- Policy Privacy TO DO ... -->

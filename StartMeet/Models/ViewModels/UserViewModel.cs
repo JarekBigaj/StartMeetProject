@@ -1,18 +1,31 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace StartMeet.Models.ViewModels
 {
     public class CreateModel
     {
+        
         [Required]
         public string Name{ get; set; }
         [Required]
         public string Email {get; set;}
         [Required]
         public string Password {get; set;}
+        [Required]
+        public Cities City { get; set; }
+        [Required]
+        public Months Month { get; set; }
+        [Required]
+        public string Day { get; set; }
+        [Required]
+        public string Year { get; set; }
+        [Required]
+        public Genders Gender { get; set; } 
     }
 
     public class LoginModel

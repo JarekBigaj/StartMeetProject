@@ -1,5 +1,8 @@
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -29,13 +32,21 @@ namespace StartMeet.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(MultipleAccountSettingsModel model)
         {
+            
             if (ModelState.IsValid)
             {
+                
                 AppUser user = new AppUser
                 {
                     UserName = model.RegisterModel.Name,
                     Email = model.RegisterModel.Email,
-                    PasswordHash = model.RegisterModel.Password
+                    PasswordHash = model.RegisterModel.Password,
+                    City = model.RegisterModel.City,
+                    Day = model.RegisterModel.Day,
+                    Month = model.RegisterModel.Month,
+                    Year = model.RegisterModel.Year,
+                    Gender = model.RegisterModel.Gender
+                    
                 };
                 IdentityResult result = await userManager.CreateAsync(user, model.RegisterModel.Password);
 
@@ -88,5 +99,7 @@ namespace StartMeet.Controllers
             return View("Index");
         }
         #endregion
+
+        
     }
 }
