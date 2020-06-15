@@ -1,18 +1,35 @@
-﻿@model  Dictionary<string,object>
+﻿@model StartMeet.Models.ViewModels.MultipleAccountSettingsModel
 
-<div class="bg-primary m-1 p-1 text-white"><h4>Information about user</h4></div>
+<!-- User navigation menu -->
+    <nav class="navbar navbar-expand sticky-top navbar-dark bg-info row">
+        <a class="navbar-brand col col-1 p-2" asp-action="Index"><h4 class="text-white">StartMeet</h4></a>
+        <input class="nav-item form-control col-3 m-2" type="text" placeholder="Search"/>
+        <ul class="navbar-nav col ml-5">
+            <li class="nav-item p-2">
+                <a class="nav-link" asp-action="Index">Home</a>
+            </li>
+            <li class="nav-item p-2">
+                <a class="nav-link " href="#">Friends</a>
+            </li>
+            <li class="nav-item p-2">
+                <a class="nav-link" href="#">Notifications</a>
+            </li>
+        </ul>
+        <a class="nav-item p-2"></a>
+        <!-- Dropdown -->
+        <div class="nav-item p-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+                @if (User?.Identity?.IsAuthenticated ?? false)
+                {
+                    <a class="dropdown-item" asp-controller="UserHome" asp-action="Logout">Log Out</a>
+                }
+            </div>
+        </div>
+    </nav>
 
-<table class="table table-sm table-bordered m-1 p-1">
-    @foreach(var kvp in Model)
-    {
-        <tr>
-            <th>@kvp.Key</th>
-            <td>@kvp.Value</td>
-        </tr>
-    }
-</table>
 
-@if(User?.Identity?.IsAuthenticated ?? false)
-{
-    <a asp-controller="UserHome" asp-action="Logout" class="btn btn-danger">Log Out</a>
-}
+
+

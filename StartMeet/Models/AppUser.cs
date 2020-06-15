@@ -33,5 +33,7 @@ namespace StartMeet.Models
 
         public string Day { get; set; }
         public string Year { get; set; }
+
     }
+
 }
